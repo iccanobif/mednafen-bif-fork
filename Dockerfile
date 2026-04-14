@@ -38,3 +38,19 @@ RUN mkdir -p /usr/local/gcc-4.9.4/bin \
 # FROM scratch AS export-stage
 # COPY --from=builder /root/build64 /
 # Decomment Run with `docker build --output type=local,dest=./build64 .` to export the mednafen binaries to the host machine.
+
+
+
+
+
+
+
+# NOTES
+# to make apt update work, replace /etc/apt/sources.list with the following content:
+# deb http://archive.debian.org/debian jessie main
+
+# also disable signature checking:
+# echo "Acquire::Check-Valid-Until false;" > apt.conf
+
+# This still doesn't seem to be enough, getting this error when running apt install:
+# /sbin/ldconfig.real: /usr/local/lib64/libstdc++.so.6.0.20-gdb.py is not an ELF file - it has the wrong magic bytes at the start.
