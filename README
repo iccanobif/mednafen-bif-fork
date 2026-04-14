@@ -1,4 +1,13 @@
 -------------------------------------------------------------------------------
+ Mednafen bif fork
+-------------------------------------------------------------------------------
+
+This is what I intend to add to this fork:
+- Add Dockerfile to build the windows binaries
+- Extend ability to directly run zipped or 7zipped archives
+- Shortcut to mute/unmute sound
+
+-------------------------------------------------------------------------------
  Compilation Notes:
 -------------------------------------------------------------------------------
 
