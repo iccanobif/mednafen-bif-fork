@@ -84,6 +84,11 @@ cd .. && \
 #
 # gcc
 #
+
+## move to the gcc source dir and run the download_prerequisites script
+cd "$CROSS_BUILD/buffaloam/$PKGNAME_GCC" && \
+./contrib/download_prerequisites && \
+cd - && \
 mkdir gcc && cd gcc && \
 CC="$GCC_CC" CXX="$GCC_CXX" ../../buffaloam/"$PKGNAME_GCC"/configure --prefix="$CROSS32_PATH" --target=i686-w64-mingw32 --disable-multilib --enable-languages=c,c++ --disable-sjlj-exceptions --with-dwarf2 && \
 make all-gcc -j4 && make install-gcc && \

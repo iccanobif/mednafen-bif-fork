@@ -27,6 +27,13 @@ fetch "https://downloads.xiph.org/releases/flac/flac-1.3.4.tar.xz" "flac-1.3.4.t
 fetch "https://www.zlib.net/fossils/zlib-1.2.13.tar.gz" "zlib-1.2.13.tar.gz"
 fetch "https://github.com/libsdl-org/SDL/releases/download/release-2.28.5/SDL2-2.28.5.tar.gz" "SDL2-2.28.5.tar.gz"
 
+# fetch "https://gcc.gnu.org/pub/gcc/infrastructure/gmp-4.3.2.tar.bz2" "gmp-4.3.2.tar.bz2"
+# fetch "https://gcc.gnu.org/pub/gcc/infrastructure/gmp-6.3.0.tar.bz2" "gmp-6.3.0.tar.bz2"
+# fetch "https://gcc.gnu.org/pub/gcc/infrastructure/mpc-0.8.1.tar.gz" "mpc-0.8.1.tar.gz"
+# fetch "https://gcc.gnu.org/pub/gcc/infrastructure/mpc-1.3.1.tar.gz" "mpc-1.3.1.tar.gz"
+# fetch "https://gcc.gnu.org/pub/gcc/infrastructure/mpfr-2.4.2.tar.bz2" "mpfr-2.4.2.tar.bz2"
+# fetch "https://gcc.gnu.org/pub/gcc/infrastructure/mpfr-4.2.2.tar.bz2" "mpfr-4.2.2.tar.bz2"
+
 cp "$SCRIPT_DIR/gcc-4.9.4-mingw-w64-noforcepic-smalljmptab.patch" "$DEST_DIR/"
 cp "$SCRIPT_DIR/zlib-1.2.13-mingw-w64.patch" "$DEST_DIR/"
 cp "$SCRIPT_DIR/SDL2-2.28.5-win2000.patch" "$DEST_DIR/"
